@@ -1,0 +1,11 @@
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Application\bin\Release\netcoreapp3.0\Newsfeed.Application.deps.json
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Application\bin\Release\netcoreapp3.0\Newsfeed.Application.dll
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Application\bin\Release\netcoreapp3.0\Newsfeed.Application.pdb
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Application\bin\Release\netcoreapp3.0\Newsfeed.Persistance.dll
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Application\bin\Release\netcoreapp3.0\Newsfeed.Persistance.pdb
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Application\obj\Release\netcoreapp3.0\Newsfeed.Application.csprojAssemblyReference.cache
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Application\obj\Release\netcoreapp3.0\Newsfeed.Application.AssemblyInfoInputs.cache
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Application\obj\Release\netcoreapp3.0\Newsfeed.Application.AssemblyInfo.cs
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Application\obj\Release\netcoreapp3.0\Newsfeed.Application.csproj.CopyComplete
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Application\obj\Release\netcoreapp3.0\Newsfeed.Application.dll
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Application\obj\Release\netcoreapp3.0\Newsfeed.Application.pdb
