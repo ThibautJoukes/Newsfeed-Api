@@ -16,6 +16,8 @@ using AutoMapper;
 using Newsfeed.Api.Automapper;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using System.Net.Http;
+using Newsfeed.Api.Middleware;
 
 namespace Newsfeed.Api
 {
@@ -106,6 +108,17 @@ namespace Newsfeed.Api
 
             //! Cors enabled 
             app.UseCors(_corsPolicy.PolicyName);
+
+            // Middlewares
+            app.UseWhen(context => context.Request.Path.StartsWithSegments("/article/publisharticle") && context.Request.Method == HttpMethod.Post.Method, appBuilder =>
+            {
+                appBuilder.UseMiddleware<PostArticleMiddleware>();
+            });
+
+            app.UseWhen(context => context.Request.Path.StartsWithSegments("/article/publisharticles") && context.Request.Method == HttpMethod.Post.Method, appBuilder =>
+            {
+                appBuilder.UseMiddleware<PostArticlesMiddleware>();
+            });
 
             app.UseEndpoints(endpoints =>
             {

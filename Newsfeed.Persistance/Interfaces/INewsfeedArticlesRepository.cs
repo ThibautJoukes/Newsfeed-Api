@@ -9,6 +9,7 @@ namespace Newsfeed.Persistance.Interfaces
         // TODO: Must delete after data is loaded into database
         //public Task<IEnumerable<NewsfeedArticle>> AddArticlesToDatabaseAsync();
         Task<NewsfeedArticle> GetArticleByIdAsync(int id);
+        Task<IEnumerable<NewsfeedArticle>> StartFilterSearchAsync(NewsfeedArticleFiltering filterArticle);
         Task<IEnumerable<NewsfeedArticle>> GetAllArticlesAsync();
         Task<string> PostArticleAsync(NewsfeedArticle article);
         Task<string> DeleteArticleAsync(NewsfeedArticle article);

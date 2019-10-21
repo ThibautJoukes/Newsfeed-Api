@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Newsfeed.Persistance.Entities;
 using Newsfeed.Persistance.Interfaces;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Newsfeed.Persistance.Database
@@ -28,6 +29,23 @@ namespace Newsfeed.Persistance.Database
             return article;
         }
 
+
+        public async Task<IEnumerable<NewsfeedArticle>> StartFilterSearchAsync(NewsfeedArticleFiltering filterArticle)
+        {
+            IQueryable<NewsfeedArticle> articles = _db.NewsfeedArticle;
+
+            if (!string.IsNullOrEmpty(filterArticle.Author))
+                articles = articles.Where(art => art.Author.Contains(filterArticle.Author));
+
+            if (!string.IsNullOrEmpty(filterArticle.Title))
+                articles = articles.Where(art => art.Title.Contains(filterArticle.Title));
+
+            if (!string.IsNullOrEmpty(filterArticle.Content))
+                articles = articles.Where(art => art.Content.Contains(filterArticle.Content));
+
+            return await articles.ToListAsync();
+        }
+       
         public async Task<IEnumerable<NewsfeedArticle>> GetAllArticlesAsync()
         {
             var articles = await _db.NewsfeedArticle.Include(x => x.Source).ToListAsync();
@@ -35,7 +53,7 @@ namespace Newsfeed.Persistance.Database
             return articles;
         }
 
-    public async Task<string> PostArticleAsync(NewsfeedArticle article)
+        public async Task<string> PostArticleAsync(NewsfeedArticle article)
         {
             await this._db.NewsfeedArticle.AddAsync(article);
 

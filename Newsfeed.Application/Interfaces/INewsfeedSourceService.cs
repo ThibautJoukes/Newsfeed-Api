@@ -11,6 +11,5 @@ namespace Newsfeed.Application.Interfaces
         Task<NewsfeedArticleSource> GetSourceByIdAsync(int id);
         Task<IEnumerable<NewsfeedArticleSource>> GetAllSourcesAsync();
         Task<NewsfeedArticleSource> GetSourceByNameAsync(string name);
-        Task<NewsfeedArticleSource> GetSourceBySourceIdAsync(string sourceId);
     }
 }

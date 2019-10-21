@@ -25,9 +25,11 @@ namespace Newsfeed.Application.Services
         }
 
         //! Only run once, populate's database
-        public async Task<IEnumerable<NewsfeedArticle>> AddDataArticlesIntoDB()
+        public async Task<IEnumerable<NewsfeedArticle>> AddDataArticlesIntoDBAsync()
         {
             var articlesFromApi = await _newsfeedAPI.GetArticlesFromNewsApiAsync();
+            // make id NULL cuz we autocreate our own id as intiger and not as string which is done by the NewsApi
+            articlesFromApi.Select(s => { s.Source.Id = null; return s; }).ToList();
             IEnumerable<NewsfeedArticle> listArticles = _mapper.Map<IEnumerable<NewsfeedArticle>>(articlesFromApi);
 
             // Article validation
@@ -43,6 +45,11 @@ namespace Newsfeed.Application.Services
         public async Task<NewsfeedArticle> GetArticleByIdAsync(int id)
         {
             return await _newsfeedArticleRepos.GetArticleByIdAsync(id);
+        }
+
+        public async Task<IEnumerable<NewsfeedArticle>> GetArticleByFilteringAsync(NewsfeedArticleFiltering article)
+        {
+            return await _newsfeedArticleRepos.StartFilterSearchAsync(article);
         }
 
         public async Task<IEnumerable<NewsfeedArticle>> GetAllArticlesAsync()

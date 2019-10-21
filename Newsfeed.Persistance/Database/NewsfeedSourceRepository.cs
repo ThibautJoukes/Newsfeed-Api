@@ -39,14 +39,5 @@ namespace Newsfeed.Persistance.Database
 
             return source;
         }
-
-        public async Task<NewsfeedArticleSource> GetSourceBySourceIdAsync(string sourceId)
-        {
-            var source = await (from a in _db.NewsfeedArticleSource
-                                where a.IdSource == sourceId
-                                select a).FirstOrDefaultAsync();
-
-            return source;
-        }
     }
 }

@@ -7,3 +7,4 @@ C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Persistance\obj\Debug\netc
 C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Persistance\obj\Debug\netcoreapp3.0\Newsfeed.Persistance.AssemblyInfo.cs
 C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Persistance\obj\Debug\netcoreapp3.0\Newsfeed.Persistance.dll
 C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Persistance\obj\Debug\netcoreapp3.0\Newsfeed.Persistance.pdb
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Persistance\obj\Debug\netcoreapp3.0\Newsfeed.Persistance.csprojAssemblyReference.cache

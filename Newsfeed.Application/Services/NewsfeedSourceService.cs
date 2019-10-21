@@ -18,10 +18,7 @@ namespace Newsfeed.Application.Services
         {
             return await _newsfeedSourceRepos.GetSourceByIdAsync(id);
         }
-        public async Task<NewsfeedArticleSource> GetSourceBySourceIdAsync(string sourceId)
-        {
-            return await _newsfeedSourceRepos.GetSourceBySourceIdAsync(sourceId);
-        }
+
         public async Task<NewsfeedArticleSource> GetSourceByNameAsync(string name)
         {
             return await _newsfeedSourceRepos.GetSourceByNameAsync(name);

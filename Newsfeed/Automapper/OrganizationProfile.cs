@@ -13,7 +13,7 @@ namespace Newsfeed.Api.Automapper
             CreateMap<NewsfeedArticle, NewsfeedAPIArticleDto>().ReverseMap();
 
             CreateMap<NewsfeedAPIArticleSourceDto, NewsfeedArticleSource>()
-                .ForMember(dest => dest.IdSource, opt => opt.MapFrom(x => x.Id))
+                //.ForMember(dest => dest.IdSource, opt => opt.MapFrom(x => x.Id))
                 .ReverseMap();
                 
 

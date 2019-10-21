@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Newsfeed.Persistance.Configurations;
 using Newsfeed.Persistance.Entities;
-using System;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Newsfeed.Persistance.Database
 {
@@ -23,19 +22,7 @@ namespace Newsfeed.Persistance.Database
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<NewsfeedArticle>(e =>
-            {
-                e.HasOne<NewsfeedArticleSource>(a => a.Source)
-                .WithMany(s => s.Articles)
-                .HasForeignKey(e => e.CurrentSourceId);
-
-                e.Property(a => a.Id).UseIdentityColumn();
-            });
-
-            modelBuilder.Entity<NewsfeedArticleSource>(e =>
-            {
-                
-            });
+            modelBuilder.ApplyConfiguration<NewsfeedArticle>(new NewsfeedArticleEntityConfiguration());
         }
     }
 }

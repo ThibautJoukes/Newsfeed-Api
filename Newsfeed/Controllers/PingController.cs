@@ -13,26 +13,19 @@ namespace Newsfeed.Api.Controllers
     public class PingController : Controller
     {
         private ILogger _logger;
-        private INewsfeedArticleService _newsfeedArticleService;
+        private INewsfeedArticleService _articleService;
 
-        public PingController(ILogger logger, INewsfeedArticleService newsfeedArticlesService)
+        public PingController(ILogger logger, INewsfeedArticleService articleService)
         {
             _logger = logger;
-            _newsfeedArticleService = newsfeedArticlesService;
+            _articleService = articleService;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Ping()
+        public IActionResult Ping()
         {
-            //var resultArticles = await _newsfeedArticleService.AddDataArticlesIntoDB();
-
-            return new OkObjectResult(await _newsfeedArticleService.GetAllArticlesAsync());
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> Ping([FromBody] NewsfeedArticle article)
-        {
-            return new OkObjectResult(await _newsfeedArticleService.PostArticleAsync(article));
+            //var articles = await _articleService.AddDataArticlesIntoDBAsync();
+            return new OkObjectResult("Api staat online!");
         }
     }
 }

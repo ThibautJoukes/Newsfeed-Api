@@ -7,7 +7,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Newsfeed.Api", "Newsfeed\Ne
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Newsfeed.Application", "Newsfeed.Application\Newsfeed.Application.csproj", "{A545A481-9EB0-492D-98B1-FBD7FCFACBBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newsfeed.Persistance", "Newsfeed.Persistance\Newsfeed.Persistance.csproj", "{74F3D38F-F543-49CE-8456-44B9D680CECF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Newsfeed.Persistance", "Newsfeed.Persistance\Newsfeed.Persistance.csproj", "{74F3D38F-F543-49CE-8456-44B9D680CECF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{BECCCD3D-3F75-466A-98DD-B516990F84E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{CD314EA1-8414-430F-92FB-0F7A996D2FA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{52317494-E551-4946-81A5-ED531953A1D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{DA3B5FD8-B235-4542-8E16-50C57AD02540}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B0FFA4CC-B09F-45C9-A964-9CD29F9DE3FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +40,14 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7D9FA1D6-83AE-440D-A729-D5CBDA2555E8} = {DA3B5FD8-B235-4542-8E16-50C57AD02540}
+		{A545A481-9EB0-492D-98B1-FBD7FCFACBBB} = {CD314EA1-8414-430F-92FB-0F7A996D2FA0}
+		{74F3D38F-F543-49CE-8456-44B9D680CECF} = {52317494-E551-4946-81A5-ED531953A1D7}
+		{CD314EA1-8414-430F-92FB-0F7A996D2FA0} = {BECCCD3D-3F75-466A-98DD-B516990F84E9}
+		{52317494-E551-4946-81A5-ED531953A1D7} = {BECCCD3D-3F75-466A-98DD-B516990F84E9}
+		{DA3B5FD8-B235-4542-8E16-50C57AD02540} = {BECCCD3D-3F75-466A-98DD-B516990F84E9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0E45D621-DAAF-4E91-8751-97BD3C8B1C36}

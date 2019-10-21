@@ -10,8 +10,8 @@ using Newsfeed.Persistance.Database;
 namespace Newsfeed.Persistance.Migrations
 {
     [DbContext(typeof(DbNewsfeedContext))]
-    [Migration("20191010095818_NewsfeedMigration")]
-    partial class NewsfeedMigration
+    [Migration("20191017104940_newsfeedMigration")]
+    partial class newsfeedMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -67,9 +67,6 @@ namespace Newsfeed.Persistance.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("IdSource")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
