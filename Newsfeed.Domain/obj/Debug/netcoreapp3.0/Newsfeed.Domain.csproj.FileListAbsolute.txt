@@ -1,0 +1,7 @@
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Domain\bin\Debug\netcoreapp3.0\Newsfeed.Domain.deps.json
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Domain\bin\Debug\netcoreapp3.0\Newsfeed.Domain.dll
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Domain\bin\Debug\netcoreapp3.0\Newsfeed.Domain.pdb
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Domain\obj\Debug\netcoreapp3.0\Newsfeed.Domain.AssemblyInfoInputs.cache
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Domain\obj\Debug\netcoreapp3.0\Newsfeed.Domain.AssemblyInfo.cs
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Domain\obj\Debug\netcoreapp3.0\Newsfeed.Domain.dll
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Domain\obj\Debug\netcoreapp3.0\Newsfeed.Domain.pdb

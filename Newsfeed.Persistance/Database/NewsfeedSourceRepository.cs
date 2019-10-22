@@ -1,10 +1,9 @@
-﻿using Newsfeed.Persistance.Entities;
-using Newsfeed.Persistance.Interfaces;
-using System;
+﻿using Microsoft.EntityFrameworkCore;
+using Newsfeed.Application.Interfaces;
+using Newsfeed.Domain.Entities;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using System.Linq;
-using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace Newsfeed.Persistance.Database
 {

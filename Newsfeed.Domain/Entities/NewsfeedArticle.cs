@@ -1,7 +1,6 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 
-namespace Newsfeed.Persistance.Entities
+namespace Newsfeed.Domain.Entities
 {
     public class NewsfeedArticle
     {

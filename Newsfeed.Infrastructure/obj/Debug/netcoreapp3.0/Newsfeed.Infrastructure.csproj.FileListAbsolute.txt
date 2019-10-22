@@ -1,0 +1,13 @@
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Infrastructure\bin\Debug\netcoreapp3.0\Newsfeed.Infrastructure.deps.json
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Infrastructure\bin\Debug\netcoreapp3.0\Newsfeed.Infrastructure.dll
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Infrastructure\bin\Debug\netcoreapp3.0\Newsfeed.Infrastructure.pdb
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Infrastructure\bin\Debug\netcoreapp3.0\Newsfeed.Application.dll
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Infrastructure\bin\Debug\netcoreapp3.0\Newsfeed.Domain.dll
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Infrastructure\bin\Debug\netcoreapp3.0\Newsfeed.Application.pdb
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Infrastructure\bin\Debug\netcoreapp3.0\Newsfeed.Domain.pdb
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Infrastructure\obj\Debug\netcoreapp3.0\Newsfeed.Infrastructure.csprojAssemblyReference.cache
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Infrastructure\obj\Debug\netcoreapp3.0\Newsfeed.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Infrastructure\obj\Debug\netcoreapp3.0\Newsfeed.Infrastructure.AssemblyInfo.cs
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Infrastructure\obj\Debug\netcoreapp3.0\Newsfeed.Infrastructure.csproj.CopyComplete
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Infrastructure\obj\Debug\netcoreapp3.0\Newsfeed.Infrastructure.dll
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Infrastructure\obj\Debug\netcoreapp3.0\Newsfeed.Infrastructure.pdb

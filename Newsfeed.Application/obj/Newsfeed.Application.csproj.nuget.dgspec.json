@@ -31,8 +31,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\ThibautJoukes\\source\\repos\\Newsfeed\\Newsfeed.Persistance\\Newsfeed.Persistance.csproj": {
-                "projectPath": "C:\\Users\\ThibautJoukes\\source\\repos\\Newsfeed\\Newsfeed.Persistance\\Newsfeed.Persistance.csproj"
+              "C:\\Users\\ThibautJoukes\\source\\repos\\Newsfeed\\Newsfeed.Domain\\Newsfeed.Domain.csproj": {
+                "projectPath": "C:\\Users\\ThibautJoukes\\source\\repos\\Newsfeed\\Newsfeed.Domain\\Newsfeed.Domain.csproj"
               }
             }
           }
@@ -62,13 +62,35 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Extensions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Microsoft.Extensions.Http": {
               "target": "Package",
               "version": "[3.0.0, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
             "Serilog.AspNetCore": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[3.1.0, )"
             }
           },
           "imports": [
@@ -90,14 +112,14 @@
         }
       }
     },
-    "C:\\Users\\ThibautJoukes\\source\\repos\\Newsfeed\\Newsfeed.Persistance\\Newsfeed.Persistance.csproj": {
+    "C:\\Users\\ThibautJoukes\\source\\repos\\Newsfeed\\Newsfeed.Domain\\Newsfeed.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ThibautJoukes\\source\\repos\\Newsfeed\\Newsfeed.Persistance\\Newsfeed.Persistance.csproj",
-        "projectName": "Newsfeed.Persistance",
-        "projectPath": "C:\\Users\\ThibautJoukes\\source\\repos\\Newsfeed\\Newsfeed.Persistance\\Newsfeed.Persistance.csproj",
+        "projectUniqueName": "C:\\Users\\ThibautJoukes\\source\\repos\\Newsfeed\\Newsfeed.Domain\\Newsfeed.Domain.csproj",
+        "projectName": "Newsfeed.Domain",
+        "projectPath": "C:\\Users\\ThibautJoukes\\source\\repos\\Newsfeed\\Newsfeed.Domain\\Newsfeed.Domain.csproj",
         "packagesPath": "C:\\Users\\ThibautJoukes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ThibautJoukes\\source\\repos\\Newsfeed\\Newsfeed.Persistance\\obj\\",
+        "outputPath": "C:\\Users\\ThibautJoukes\\source\\repos\\Newsfeed\\Newsfeed.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -127,38 +149,6 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "dependencies": {
-            "AutoMapper": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "MediatR": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "MediatR.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
-            "Serilog.AspNetCore": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

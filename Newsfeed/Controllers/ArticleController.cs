@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Newsfeed.Application.Entities;
 using Newsfeed.Application.Interfaces;
-using Newsfeed.Persistance.Entities;
+using Newsfeed.Domain.Entities;
 using Serilog;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Newsfeed.Api.Controllers
 {

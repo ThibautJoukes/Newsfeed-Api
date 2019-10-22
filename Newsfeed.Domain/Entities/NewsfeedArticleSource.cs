@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Text.Json.Serialization;
 
-namespace Newsfeed.Persistance.Entities
+namespace Newsfeed.Domain.Entities
 {
     public class NewsfeedArticleSource
     {

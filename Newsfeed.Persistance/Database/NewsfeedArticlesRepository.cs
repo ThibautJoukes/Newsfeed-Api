@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
-using Newsfeed.Persistance.Entities;
-using Newsfeed.Persistance.Interfaces;
+using Newsfeed.Application.Interfaces;
+using Newsfeed.Domain.Entities;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;

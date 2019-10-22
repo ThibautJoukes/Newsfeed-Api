@@ -1,4 +1,4 @@
-﻿using Newsfeed.Persistance.Entities;
+﻿using Newsfeed.Domain.Entities;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
