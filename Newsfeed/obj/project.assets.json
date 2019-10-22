@@ -11,7 +11,7 @@
           "lib/netstandard2.0/Autofac.dll": {}
         }
       },
-      "Autofac.Extensions.DependencyInjection/5.0.0": {
+      "Autofac.Extensions.DependencyInjection/5.0.1": {
         "type": "package",
         "dependencies": {
           "Autofac": "4.9.1",
@@ -129,11 +129,11 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Html.Abstractions.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Http.Abstractions/2.0.0": {
+      "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Features": "2.0.0",
-          "System.Text.Encodings.Web": "4.4.0"
+          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "System.Text.Encodings.Web": "4.5.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {}
@@ -142,10 +142,25 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Http.Features/2.0.0": {
+      "Microsoft.AspNetCore.Http.Extensions/2.2.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "2.0.0"
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.2.0",
+          "Microsoft.Net.Http.Headers": "2.2.0",
+          "System.Buffers": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Extensions.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.2.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {}
@@ -700,10 +715,10 @@
           "lib/netstandard1.6/Microsoft.Extensions.DependencyModel.dll": {}
         }
       },
-      "Microsoft.Extensions.FileProviders.Abstractions/2.1.0": {
+      "Microsoft.Extensions.FileProviders.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "2.1.0"
+          "Microsoft.Extensions.Primitives": "2.2.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
@@ -831,6 +846,19 @@
         },
         "runtime": {
           "lib/netcoreapp2.1/Microsoft.Identity.Client.dll": {}
+        }
+      },
+      "Microsoft.Net.Http.Headers/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.2.0",
+          "System.Buffers": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/2.1.2": {
@@ -1291,7 +1319,7 @@
           "lib/netstandard2.0/Serilog.dll": {}
         }
       },
-      "Serilog.AspNetCore/3.0.0": {
+      "Serilog.AspNetCore/3.1.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.0.0",
@@ -1395,38 +1423,36 @@
           "lib/netstandard2.0/Serilog.Sinks.Debug.dll": {}
         }
       },
-      "Serilog.Sinks.File/4.0.0": {
+      "Serilog.Sinks.File/4.1.0": {
         "type": "package",
         "dependencies": {
           "Serilog": "2.5.0",
-          "System.IO": "4.1.0",
           "System.IO.FileSystem": "4.0.1",
-          "System.IO.FileSystem.Primitives": "4.0.1",
-          "System.Runtime.InteropServices": "4.1.0",
           "System.Text.Encoding.Extensions": "4.0.11",
-          "System.Threading": "4.0.11",
           "System.Threading.Timer": "4.0.1"
         },
         "compile": {
-          "lib/netstandard1.3/Serilog.Sinks.File.dll": {}
+          "lib/netstandard2.0/Serilog.Sinks.File.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.3/Serilog.Sinks.File.dll": {}
+          "lib/netstandard2.0/Serilog.Sinks.File.dll": {}
         }
       },
-      "Serilog.Sinks.MSSqlServer/5.1.2": {
+      "Serilog.Sinks.MSSqlServer/5.1.3": {
         "type": "package",
         "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.0.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "2.0.0",
           "Serilog": "2.5.0",
           "Serilog.Sinks.PeriodicBatching": "2.1.1",
-          "System.Configuration.ConfigurationManager": "4.4.0",
+          "System.Configuration.ConfigurationManager": "4.5.0",
           "System.Data.SqlClient": "4.4.0"
         },
         "compile": {
-          "lib/netstandard2.0/Serilog.Sinks.MSSqlServer.dll": {}
+          "lib/netcoreapp2.0/Serilog.Sinks.MSSqlServer.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Serilog.Sinks.MSSqlServer.dll": {}
+          "lib/netcoreapp2.0/Serilog.Sinks.MSSqlServer.dll": {}
         }
       },
       "Serilog.Sinks.PeriodicBatching/2.1.1": {
@@ -1455,20 +1481,13 @@
           "lib/netstandard1.6/System.AppContext.dll": {}
         }
       },
-      "System.Buffers/4.3.0": {
+      "System.Buffers/4.5.0": {
         "type": "package",
-        "dependencies": {
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Diagnostics.Tracing": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
         "compile": {
-          "lib/netstandard1.1/_._": {}
+          "ref/netcoreapp2.0/_._": {}
         },
         "runtime": {
-          "lib/netstandard1.1/System.Buffers.dll": {}
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "System.Collections/4.3.0": {
@@ -2993,15 +3012,42 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "MediatR": "7.0.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "7.0.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection": "3.0.0",
           "Microsoft.Extensions.Http": "3.0.0",
-          "Newsfeed.Persistance": "1.0.0",
-          "Serilog.AspNetCore": "3.0.0"
+          "Newsfeed.Domain": "1.0.0",
+          "Newtonsoft.Json": "12.0.2",
+          "Serilog.AspNetCore": "3.1.0"
         },
         "compile": {
           "bin/placeholder/Newsfeed.Application.dll": {}
         },
         "runtime": {
           "bin/placeholder/Newsfeed.Application.dll": {}
+        }
+      },
+      "Newsfeed.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/Newsfeed.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newsfeed.Domain.dll": {}
+        }
+      },
+      "Newsfeed.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "Newsfeed.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newsfeed.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newsfeed.Infrastructure.dll": {}
         }
       },
       "Newsfeed.Persistance/1.0.0": {
@@ -3011,9 +3057,14 @@
           "AutoMapper": "9.0.0",
           "MediatR": "7.0.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "7.0.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
           "Microsoft.EntityFrameworkCore": "3.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.0.0",
-          "Serilog.AspNetCore": "3.0.0"
+          "Microsoft.Extensions.DependencyInjection": "3.0.0",
+          "Newsfeed.Application": "1.0.0",
+          "Newtonsoft.Json": "12.0.2",
+          "Serilog.AspNetCore": "3.1.0"
         },
         "compile": {
           "bin/placeholder/Newsfeed.Persistance.dll": {}
@@ -3045,14 +3096,14 @@
         "lib/netstandard2.0/Autofac.xml"
       ]
     },
-    "Autofac.Extensions.DependencyInjection/5.0.0": {
-      "sha512": "MQYbslp/cguL11jrKWIaR7LVCCLB9od/ysEjvamzB5QVbjbTGeNSXLq46RONiCE3RlAsphs7N8qm/v8uDPEAMQ==",
+    "Autofac.Extensions.DependencyInjection/5.0.1": {
+      "sha512": "92/AmuykrdvaLlE8Y4sc4SlX2RrCeClUqddjNi7cAYsOsVD/jq5JXDP1ZhHSBan4P/o7AKjpxjD/MrPTO0DHRw==",
       "type": "package",
-      "path": "autofac.extensions.dependencyinjection/5.0.0",
+      "path": "autofac.extensions.dependencyinjection/5.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "autofac.extensions.dependencyinjection.5.0.0.nupkg.sha512",
+        "autofac.extensions.dependencyinjection.5.0.1.nupkg.sha512",
         "autofac.extensions.dependencyinjection.nuspec",
         "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll",
         "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.pdb",
@@ -3166,29 +3217,42 @@
         "microsoft.aspnetcore.html.abstractions.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Http.Abstractions/2.0.0": {
-      "sha512": "pblZLY7IfNqhQ5wwGQ0vNq2mG6W5YgZI1fk7suEuwZsGxGEADNBAyNlTALM9L8nMXdvbp6aHP/t4wHrFpcL3Sw==",
+    "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+      "sha512": "Nxs7Z1q3f1STfLYKJSVXCs1iBl+Ya6E8o4Oy1bCxJ/rNI44E/0f6tbsrVqAWfB7jlnJfyaAtIalBVxPKUPQb4Q==",
       "type": "package",
-      "path": "microsoft.aspnetcore.http.abstractions/2.0.0",
+      "path": "microsoft.aspnetcore.http.abstractions/2.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.xml",
-        "microsoft.aspnetcore.http.abstractions.2.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
         "microsoft.aspnetcore.http.abstractions.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Http.Features/2.0.0": {
-      "sha512": "yk62muzFTZTKCQuo3nmVPkPvGBlM2qbdSxbX62TufuONuKQrTGQ/SwhwBbYutk5/YY7u4HETu0n9BKOn7mMgmA==",
+    "Microsoft.AspNetCore.Http.Extensions/2.2.0": {
+      "sha512": "2DgZ9rWrJtuR7RYiew01nGRzuQBDaGHGmK56Rk54vsLLsCdzuFUPqbDTJCS1qJQWTbmbIQ9wGIOjpxA1t0l7/w==",
       "type": "package",
-      "path": "microsoft.aspnetcore.http.features/2.0.0",
+      "path": "microsoft.aspnetcore.http.extensions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Extensions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Extensions.xml",
+        "microsoft.aspnetcore.http.extensions.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.extensions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Features/2.2.0": {
+      "sha512": "ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.features/2.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
-        "microsoft.aspnetcore.http.features.2.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
         "microsoft.aspnetcore.http.features.nuspec"
       ]
     },
@@ -3771,16 +3835,16 @@
         "microsoft.extensions.dependencymodel.nuspec"
       ]
     },
-    "Microsoft.Extensions.FileProviders.Abstractions/2.1.0": {
-      "sha512": "itv+7XBu58pxi8mykxx9cUO1OOVYe0jmQIZVSZVp5lOcLxB7sSV2bnHiI1RSu6Nxne/s6+oBla3ON5CCMSmwhQ==",
+    "Microsoft.Extensions.FileProviders.Abstractions/2.2.0": {
+      "sha512": "EcnaSsPTqx2MGnHrmWOD0ugbuuqVT8iICqSqPzi45V5/MA1LjUNb0kwgcxBGqizV1R+WeBK7/Gw25Jzkyk9bIw==",
       "type": "package",
-      "path": "microsoft.extensions.fileproviders.abstractions/2.1.0",
+      "path": "microsoft.extensions.fileproviders.abstractions/2.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.xml",
-        "microsoft.extensions.fileproviders.abstractions.2.1.0.nupkg.sha512",
+        "microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512",
         "microsoft.extensions.fileproviders.abstractions.nuspec"
       ]
     },
@@ -3936,6 +4000,19 @@
         "ref/uap10.0/Microsoft.Identity.Client.xml",
         "ref/xamarinmac20/Microsoft.Identity.Client.dll",
         "ref/xamarinmac20/Microsoft.Identity.Client.xml"
+      ]
+    },
+    "Microsoft.Net.Http.Headers/2.2.0": {
+      "sha512": "iZNkjYqlo8sIOI0bQfpsSoMTmB/kyvmV2h225ihyZT33aTp48ZpF6qYnXxzSXmHt8DpBAwBTX+1s1UFLbYfZKg==",
+      "type": "package",
+      "path": "microsoft.net.http.headers/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll",
+        "lib/netstandard2.0/Microsoft.Net.Http.Headers.xml",
+        "microsoft.net.http.headers.2.2.0.nupkg.sha512",
+        "microsoft.net.http.headers.nuspec"
       ]
     },
     "Microsoft.NETCore.Platforms/2.1.2": {
@@ -4843,16 +4920,16 @@
         "serilog.nuspec"
       ]
     },
-    "Serilog.AspNetCore/3.0.0": {
-      "sha512": "xwgUAk1cvQWp9rkAu7kSlUeDjbliAa7UtmsZpZv/HQbFlOHkmiiytw715sQ0PcNM6JMcGAP7GCOkfQ+GbeOQ7A==",
+    "Serilog.AspNetCore/3.1.0": {
+      "sha512": "wnQhyRTLGxuViTn7cvhuxEeeS7+O9LWUa5MIV2xUVy1r4aOaQ19Z0yWRQVexl7B+WlgjjOoTfG4CuOcjlXu+7A==",
       "type": "package",
-      "path": "serilog.aspnetcore/3.0.0",
+      "path": "serilog.aspnetcore/3.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Serilog.AspNetCore.dll",
         "lib/netstandard2.0/Serilog.AspNetCore.xml",
-        "serilog.aspnetcore.3.0.0.nupkg.sha512",
+        "serilog.aspnetcore.3.1.0.nupkg.sha512",
         "serilog.aspnetcore.nuspec"
       ]
     },
@@ -4950,35 +5027,42 @@
         "serilog.sinks.debug.nuspec"
       ]
     },
-    "Serilog.Sinks.File/4.0.0": {
-      "sha512": "vBj43RkAbeP1dzoPFR2+LfV5GevDRPDq6265JJBv223lMvT9rfdwe/S/I9ow7aZSLYKfw4qPDw6NW8YwjbDbvg==",
+    "Serilog.Sinks.File/4.1.0": {
+      "sha512": "U0b34w+ZikbqWEZ3ui7BdzxY/19zwrdhLtI3o6tfmLdD3oXxg7n2TZJjwCCTlKPgRuYic9CBWfrZevbb70mTaw==",
       "type": "package",
-      "path": "serilog.sinks.file/4.0.0",
+      "path": "serilog.sinks.file/4.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/Serilog.Sinks.File.dll",
+        "lib/net45/Serilog.Sinks.File.pdb",
         "lib/net45/Serilog.Sinks.File.xml",
         "lib/netstandard1.3/Serilog.Sinks.File.dll",
+        "lib/netstandard1.3/Serilog.Sinks.File.pdb",
         "lib/netstandard1.3/Serilog.Sinks.File.xml",
-        "serilog.sinks.file.4.0.0.nupkg.sha512",
+        "lib/netstandard2.0/Serilog.Sinks.File.dll",
+        "lib/netstandard2.0/Serilog.Sinks.File.pdb",
+        "lib/netstandard2.0/Serilog.Sinks.File.xml",
+        "serilog.sinks.file.4.1.0.nupkg.sha512",
         "serilog.sinks.file.nuspec"
       ]
     },
-    "Serilog.Sinks.MSSqlServer/5.1.2": {
-      "sha512": "+FU05c8tKomMmKy0m1FXPciuKBkTPY1blBm5zrRTXCisuB87aT1bR8m8HGaUnSwIrIP7nSISub4+qyBHf+zpKw==",
+    "Serilog.Sinks.MSSqlServer/5.1.3": {
+      "sha512": "u2b89Cww1xkCutIwM4LJL7HbcCb+TpDlhAF/Jmlx1LbRdL4njDbeiUjefyUkFGBza9XXXnZGkyF6/RveoTumJQ==",
       "type": "package",
-      "path": "serilog.sinks.mssqlserver/5.1.2",
+      "path": "serilog.sinks.mssqlserver/5.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net45/Serilog.Sinks.MSSqlServer.dll",
-        "lib/net45/Serilog.Sinks.MSSqlServer.xml",
         "lib/net452/Serilog.Sinks.MSSqlServer.dll",
         "lib/net452/Serilog.Sinks.MSSqlServer.xml",
+        "lib/net461/Serilog.Sinks.MSSqlServer.dll",
+        "lib/net461/Serilog.Sinks.MSSqlServer.xml",
+        "lib/netcoreapp2.0/Serilog.Sinks.MSSqlServer.dll",
+        "lib/netcoreapp2.0/Serilog.Sinks.MSSqlServer.xml",
         "lib/netstandard2.0/Serilog.Sinks.MSSqlServer.dll",
         "lib/netstandard2.0/Serilog.Sinks.MSSqlServer.xml",
-        "serilog.sinks.mssqlserver.5.1.2.nupkg.sha512",
+        "serilog.sinks.mssqlserver.5.1.3.nupkg.sha512",
         "serilog.sinks.mssqlserver.nuspec"
       ]
     },
@@ -5054,19 +5138,33 @@
         "system.appcontext.nuspec"
       ]
     },
-    "System.Buffers/4.3.0": {
-      "sha512": "ratu44uTIHgeBeI0dE8DWvmXVBSo4u7ozRZZHOMmK/JPpYyo0dAfgSiHlpiObMQ5lEtEyIXA40sKRYg5J6A8uQ==",
+    "System.Buffers/4.5.0": {
+      "sha512": "pL2ChpaRRWI/p4LXyy4RgeWlYF2sgfj/pnVMvBqwNFr5cXg7CXNnWZWxrOONLg8VGdFB8oB+EG2Qw4MLgTOe+A==",
       "type": "package",
-      "path": "system.buffers/4.3.0",
+      "path": "system.buffers/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/netstandard1.1/.xml",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/_._",
         "lib/netstandard1.1/System.Buffers.dll",
-        "system.buffers.4.3.0.nupkg.sha512",
-        "system.buffers.nuspec"
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net45/System.Buffers.dll",
+        "ref/net45/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "ref/uap10.0.16299/_._",
+        "system.buffers.4.5.0.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Collections/4.3.0": {
@@ -9251,6 +9349,16 @@
       "path": "../Newsfeed.Application/Newsfeed.Application.csproj",
       "msbuildProject": "../Newsfeed.Application/Newsfeed.Application.csproj"
     },
+    "Newsfeed.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Newsfeed.Domain/Newsfeed.Domain.csproj",
+      "msbuildProject": "../Newsfeed.Domain/Newsfeed.Domain.csproj"
+    },
+    "Newsfeed.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Newsfeed.Infrastructure/Newsfeed.Infrastructure.csproj",
+      "msbuildProject": "../Newsfeed.Infrastructure/Newsfeed.Infrastructure.csproj"
+    },
     "Newsfeed.Persistance/1.0.0": {
       "type": "project",
       "path": "../Newsfeed.Persistance/Newsfeed.Persistance.csproj",
@@ -9262,22 +9370,26 @@
       "AutoMapper >= 9.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 7.0.0",
       "Autofac >= 4.9.4",
-      "Autofac.Extensions.DependencyInjection >= 5.0.0",
+      "Autofac.Extensions.DependencyInjection >= 5.0.1",
       "AutofacSerilogIntegration >= 2.0.0",
       "MediatR >= 7.0.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 7.0.0",
+      "Microsoft.AspNetCore.Http.Abstractions >= 2.2.0",
+      "Microsoft.AspNetCore.Http.Extensions >= 2.2.0",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 3.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 3.0.0",
-      "Microsoft.Extensions.Http >= 3.0.0",
+      "Microsoft.Extensions.DependencyInjection >= 3.0.0",
       "Microsoft.Extensions.Logging.Debug >= 3.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.0.0",
       "Newsfeed.Application >= 1.0.0",
+      "Newsfeed.Infrastructure >= 1.0.0",
+      "Newsfeed.Persistance >= 1.0.0",
       "Newtonsoft.Json >= 12.0.2",
-      "Serilog.AspNetCore >= 3.0.0",
+      "Serilog.AspNetCore >= 3.1.0",
       "Serilog.Settings.Configuration >= 3.1.0",
-      "Serilog.Sinks.File >= 4.0.0",
-      "Serilog.Sinks.MSSqlServer >= 5.1.2"
+      "Serilog.Sinks.File >= 4.1.0",
+      "Serilog.Sinks.MSSqlServer >= 5.1.3"
     ]
   },
   "packageFolders": {
@@ -9313,6 +9425,12 @@
           "projectReferences": {
             "C:\\Users\\ThibautJoukes\\source\\repos\\Newsfeed\\Newsfeed.Application\\Newsfeed.Application.csproj": {
               "projectPath": "C:\\Users\\ThibautJoukes\\source\\repos\\Newsfeed\\Newsfeed.Application\\Newsfeed.Application.csproj"
+            },
+            "C:\\Users\\ThibautJoukes\\source\\repos\\Newsfeed\\Newsfeed.Infrastructure\\Newsfeed.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\ThibautJoukes\\source\\repos\\Newsfeed\\Newsfeed.Infrastructure\\Newsfeed.Infrastructure.csproj"
+            },
+            "C:\\Users\\ThibautJoukes\\source\\repos\\Newsfeed\\Newsfeed.Persistance\\Newsfeed.Persistance.csproj": {
+              "projectPath": "C:\\Users\\ThibautJoukes\\source\\repos\\Newsfeed\\Newsfeed.Persistance\\Newsfeed.Persistance.csproj"
             }
           }
         }
@@ -9340,7 +9458,7 @@
           },
           "Autofac.Extensions.DependencyInjection": {
             "target": "Package",
-            "version": "[5.0.0, )"
+            "version": "[5.0.1, )"
           },
           "AutofacSerilogIntegration": {
             "target": "Package",
@@ -9353,6 +9471,14 @@
           "MediatR.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[7.0.0, )"
+          },
+          "Microsoft.AspNetCore.Http.Abstractions": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
+          "Microsoft.AspNetCore.Http.Extensions": {
+            "target": "Package",
+            "version": "[2.2.0, )"
           },
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
             "target": "Package",
@@ -9368,7 +9494,7 @@
             "target": "Package",
             "version": "[3.0.0, )"
           },
-          "Microsoft.Extensions.Http": {
+          "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[3.0.0, )"
           },
@@ -9386,7 +9512,7 @@
           },
           "Serilog.AspNetCore": {
             "target": "Package",
-            "version": "[3.0.0, )"
+            "version": "[3.1.0, )"
           },
           "Serilog.Settings.Configuration": {
             "target": "Package",
@@ -9394,11 +9520,11 @@
           },
           "Serilog.Sinks.File": {
             "target": "Package",
-            "version": "[4.0.0, )"
+            "version": "[4.1.0, )"
           },
           "Serilog.Sinks.MSSqlServer": {
             "target": "Package",
-            "version": "[5.1.2, )"
+            "version": "[5.1.3, )"
           }
         },
         "imports": [

@@ -1,8 +1,8 @@
 ﻿using Autofac;
 using Newsfeed.Application.Interfaces;
 using Newsfeed.Application.Services;
+using Newsfeed.Infrastructure.Services;
 using Newsfeed.Persistance.Database;
-using Newsfeed.Persistance.Interfaces;
 
 namespace Newsfeed.Api.Modules
 {

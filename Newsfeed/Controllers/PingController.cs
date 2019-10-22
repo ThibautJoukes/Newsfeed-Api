@@ -1,9 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
 using Newsfeed.Application.Interfaces;
-using Newsfeed.Persistance.Entities;
 using Serilog;
-using System.Collections;
-using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Newsfeed.Api.Controllers
@@ -14,18 +13,32 @@ namespace Newsfeed.Api.Controllers
     {
         private ILogger _logger;
         private INewsfeedArticleService _articleService;
+        private readonly IMediator _mediator;
 
-        public PingController(ILogger logger, INewsfeedArticleService articleService)
+        public PingController(ILogger logger, INewsfeedArticleService articleService, IMediator mediator)
         {
             _logger = logger;
             _articleService = articleService;
+            _mediator = mediator;
         }
 
         [HttpGet]
         public IActionResult Ping()
         {
+            //string result = await _mediator.Send(new Ping());
             //var articles = await _articleService.AddDataArticlesIntoDBAsync();
-            return new OkObjectResult("Api staat online!");
+            return new OkObjectResult("Ping ping, server staat online!");
         }
     }
+
+    //public class Ping : IRequest<string> {
+    //}
+
+    //public class PingHandler : IRequestHandler<Ping, string>
+    //{
+    //    public Task<string> Handle(Ping request, CancellationToken cancellationToken)
+    //    {
+    //        return Task.FromResult("Pong");
+    //    }
+    //}
 }

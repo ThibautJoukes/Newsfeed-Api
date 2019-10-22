@@ -1,10 +1,9 @@
 ﻿using Newsfeed.Application.Interfaces;
-using Newsfeed.Persistance.Entities;
-using Newsfeed.Persistance.Interfaces;
+using Newsfeed.Domain.Entities;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Newsfeed.Application.Services
+namespace Newsfeed.Infrastructure.Services
 {
     public class NewsfeedSourceService : INewsfeedSourceService
     {

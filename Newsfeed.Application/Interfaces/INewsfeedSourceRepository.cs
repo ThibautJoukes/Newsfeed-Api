@@ -1,10 +1,8 @@
-﻿using Newsfeed.Persistance.Entities;
-using System;
+﻿using Newsfeed.Domain.Entities;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
-namespace Newsfeed.Persistance.Interfaces
+namespace Newsfeed.Application.Interfaces
 {
     public interface INewsfeedSourceRepository
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Newsfeed.Domain.Entities;
 using Newsfeed.Persistance.Configurations;
-using Newsfeed.Persistance.Entities;
 
 namespace Newsfeed.Persistance.Database
 {

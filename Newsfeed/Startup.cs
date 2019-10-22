@@ -1,23 +1,23 @@
 using Autofac;
-using Autofac.Extensions.DependencyInjection;
 using AutofacSerilogIntegration;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Newsfeed.Api.Extensions;
-using Newsfeed.Api.Modules;
-using Newsfeed.Persistance.Database;
-using Serilog;
-using Newsfeed.Api.ConfigModels;
-using AutoMapper;
 using Newsfeed.Api.Automapper;
-using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using System.Net.Http;
+using Newsfeed.Api.ConfigModels;
+using Newsfeed.Api.Extensions;
 using Newsfeed.Api.Middleware;
+using Newsfeed.Api.Modules;
+using Newsfeed.Application;
+using Newsfeed.Infrastructure;
+using Newsfeed.Persistance;
+using Newtonsoft.Json;
+using Serilog;
+using System.Net.Http;
 
 namespace Newsfeed.Api
 {
@@ -57,12 +57,6 @@ namespace Newsfeed.Api
                 });
             });
 
-            // Make database context class available to the application
-            services.AddDbContext<DbNewsfeedContext>(options =>
-            {
-                options.UseSqlServer(Configuration.GetSection("ConnectionStrings").Get<ConnectionStrings>().dbSql);
-            });
-
             services.AddSingleton(provider => new MapperConfiguration(cfg =>
             {
                 cfg.AddProfile(new OrganizationProfile());
@@ -71,7 +65,10 @@ namespace Newsfeed.Api
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
                 .AddNewtonsoftJson(opt => opt.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
 
-            services.AddHttpClient();
+            // Add's projects DI's
+            services.AddPersistence(Configuration, Configuration.GetSection("ConnectionStrings").Get<ConnectionStrings>().dbSql);
+            services.AddInfrastructure(Configuration);
+            services.AddApplication();
 
             // Add services to the collection.
             services.AddOptions();
@@ -95,7 +92,6 @@ namespace Newsfeed.Api
                 app.UseDeveloperExceptionPage();
 
                 // global error exception handling
-                //TODO lijne verplaatsen
                 app.ConfigureExceptionHandler(Log.Logger);
             }
             else

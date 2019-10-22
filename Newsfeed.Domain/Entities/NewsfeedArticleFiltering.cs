@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Newsfeed.Persistance.Entities
+﻿namespace Newsfeed.Domain.Entities
 {
     public class NewsfeedArticleFiltering
     {

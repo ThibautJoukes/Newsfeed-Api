@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Newsfeed.Application.Entities;
 using Newsfeed.Application.EntityDtos;
-using Newsfeed.Persistance.Entities;
+using Newsfeed.Domain.Entities;
 
 namespace Newsfeed.Api.Automapper
 {
