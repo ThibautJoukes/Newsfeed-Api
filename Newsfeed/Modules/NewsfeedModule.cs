@@ -1,32 +1,44 @@
 ﻿using Autofac;
+using MediatR;
 using Newsfeed.Application.Interfaces;
-using Newsfeed.Application.Services;
-using Newsfeed.Infrastructure.Services;
 using Newsfeed.Persistance.Database;
+using System.Reflection;
 
 namespace Newsfeed.Api.Modules
 {
-    public class NewsfeedModule: Module
+    // Module is refence to system.reflection and autofac... that's why we specify which one we're going to use
+    public class NewsfeedModule: Autofac.Module
     {    
         protected override void Load(ContainerBuilder builder)
         {
             base.Load(builder);
 
             RegisterRepositories(builder);
-            RegisterServices(builder);
+            //RegisterMediatR(builder);
         }
 
-        public void RegisterRepositories(ContainerBuilder builder)
+        private void RegisterRepositories(ContainerBuilder builder)
         {
             builder.RegisterType<NewsfeedArticlesRepository>().As<INewsfeedArticlesRepository>();
             builder.RegisterType<NewsfeedSourceRepository>().As<INewsfeedSourceRepository>();
         }
 
-        public void RegisterServices(ContainerBuilder builder)
+        private void RegisterMediatR(ContainerBuilder builder)
         {
-            builder.RegisterType<NewsfeedArticleService>().As<INewsfeedArticleService>();
-            builder.RegisterType<NewsfeedSourceService>().As<INewsfeedSourceService>();
-            builder.RegisterType<NewsfeedApiService>().As<INewsfeedApiService>();
+            // dispatcher itself
+            builder
+              .RegisterType<Mediator>()
+              .As<IMediator>()
+              .InstancePerLifetimeScope();
+
+            // request & notification handlers
+            builder.Register<ServiceFactory>(context =>
+            {
+                var c = context.Resolve<IComponentContext>();
+                return t => c.Resolve(t);
+            });
+
+            builder.RegisterAssemblyTypes(typeof(IRequestHandler<,>).GetTypeInfo().Assembly).AsImplementedInterfaces(); // via assembly scan
         }
     }
 }

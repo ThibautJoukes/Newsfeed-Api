@@ -53,41 +53,33 @@ namespace Newsfeed.Persistance.Database
             return articles;
         }
 
-        public async Task<string> PostArticleAsync(NewsfeedArticle article)
+        public async Task PostArticleAsync(NewsfeedArticle article)
         {
             await this._db.NewsfeedArticle.AddAsync(article);
 
             await this._db.SaveChangesAsync();
-
-            return "This article has been successfully added to the database.";
         }
 
-        public async Task<string> DeleteArticleAsync(NewsfeedArticle article)
+        public async Task DeleteArticleAsync(NewsfeedArticle article)
         {
             this._db.NewsfeedArticle.Remove(article);
 
             await this._db.SaveChangesAsync();
-
-            return "Data has been successfully deleted from the database.";
         }
 
-        public async Task<string> DeleteArticlesAsync(IEnumerable<NewsfeedArticle> articles)
+        public async Task DeleteArticlesAsync(IEnumerable<NewsfeedArticle> articles)
         {
             this._db.NewsfeedArticle.RemoveRange(articles);
 
             await this._db.SaveChangesAsync();
-
-            return "Data has been successfully deleted from the database.";
         }
 
-        public async Task<string> DeleteArticleByIdAsync(int id)
+        public async Task DeleteArticleByIdAsync(int id)
         {
             NewsfeedArticle article = new NewsfeedArticle() { Id = id };
             this._db.Entry(article).State = EntityState.Deleted;
 
             await this._db.SaveChangesAsync();
-
-            return "Data has been successfully deleted from the database.";
         }
     }
 }

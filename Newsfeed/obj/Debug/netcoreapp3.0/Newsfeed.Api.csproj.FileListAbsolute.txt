@@ -1,9 +1,3 @@
-C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed\obj\Debug\netcoreapp3.0\Newsfeed.Api.csprojAssemblyReference.cache
-C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed\obj\Debug\netcoreapp3.0\staticwebassets\Newsfeed.Api.StaticWebAssets.Manifest.cache
-C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed\obj\Debug\netcoreapp3.0\staticwebassets\Newsfeed.Api.StaticWebAssets.xml
-C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed\obj\Debug\netcoreapp3.0\Newsfeed.Api.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed\obj\Debug\netcoreapp3.0\Newsfeed.Api.AssemblyInfoInputs.cache
-C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed\obj\Debug\netcoreapp3.0\Newsfeed.Api.AssemblyInfo.cs
 C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed\bin\Debug\netcoreapp3.0\appsettings.Development.json
 C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed\bin\Debug\netcoreapp3.0\appsettings.json
 C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed\bin\Debug\netcoreapp3.0\appsettings.Production.json
@@ -139,6 +133,12 @@ C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed\bin\Debug\netcoreapp3.0\Ne
 C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed\bin\Debug\netcoreapp3.0\Newsfeed.Infrastructure.pdb
 C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed\bin\Debug\netcoreapp3.0\Newsfeed.Persistance.pdb
 C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed\bin\Debug\netcoreapp3.0\Newsfeed.Domain.pdb
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed\obj\Debug\netcoreapp3.0\Newsfeed.Api.csprojAssemblyReference.cache
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed\obj\Debug\netcoreapp3.0\staticwebassets\Newsfeed.Api.StaticWebAssets.Manifest.cache
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed\obj\Debug\netcoreapp3.0\staticwebassets\Newsfeed.Api.StaticWebAssets.xml
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed\obj\Debug\netcoreapp3.0\Newsfeed.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed\obj\Debug\netcoreapp3.0\Newsfeed.Api.AssemblyInfoInputs.cache
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed\obj\Debug\netcoreapp3.0\Newsfeed.Api.AssemblyInfo.cs
 C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed\obj\Debug\netcoreapp3.0\Newsfeed.Api.RazorTargetAssemblyInfo.cache
 C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed\obj\Debug\netcoreapp3.0\Newsfeed.Api.csproj.CopyComplete
 C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed\obj\Debug\netcoreapp3.0\Newsfeed.Api.dll

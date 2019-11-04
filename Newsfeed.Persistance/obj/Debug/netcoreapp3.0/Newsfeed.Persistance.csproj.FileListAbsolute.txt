@@ -1,6 +1,3 @@
-C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Persistance\obj\Debug\netcoreapp3.0\Newsfeed.Persistance.csprojAssemblyReference.cache
-C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Persistance\obj\Debug\netcoreapp3.0\Newsfeed.Persistance.AssemblyInfoInputs.cache
-C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Persistance\obj\Debug\netcoreapp3.0\Newsfeed.Persistance.AssemblyInfo.cs
 C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Persistance\bin\Debug\netcoreapp3.0\Newsfeed.Persistance.deps.json
 C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Persistance\bin\Debug\netcoreapp3.0\Newsfeed.Persistance.runtimeconfig.json
 C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Persistance\bin\Debug\netcoreapp3.0\Newsfeed.Persistance.runtimeconfig.dev.json
@@ -10,6 +7,9 @@ C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Persistance\bin\Debug\netc
 C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Persistance\bin\Debug\netcoreapp3.0\Newsfeed.Domain.dll
 C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Persistance\bin\Debug\netcoreapp3.0\Newsfeed.Application.pdb
 C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Persistance\bin\Debug\netcoreapp3.0\Newsfeed.Domain.pdb
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Persistance\obj\Debug\netcoreapp3.0\Newsfeed.Persistance.csprojAssemblyReference.cache
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Persistance\obj\Debug\netcoreapp3.0\Newsfeed.Persistance.AssemblyInfoInputs.cache
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Persistance\obj\Debug\netcoreapp3.0\Newsfeed.Persistance.AssemblyInfo.cs
 C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Persistance\obj\Debug\netcoreapp3.0\Newsfeed.Persistance.csproj.CopyComplete
 C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Persistance\obj\Debug\netcoreapp3.0\Newsfeed.Persistance.dll
 C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Persistance\obj\Debug\netcoreapp3.0\Newsfeed.Persistance.pdb
