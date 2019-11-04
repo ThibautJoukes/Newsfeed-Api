@@ -4,7 +4,6 @@ namespace Newsfeed.Domain.Entities
 {
     public class NewsfeedArticle
     {
-        public NewsfeedArticle() { }
         public int Id { get; set; }
 
         public int CurrentSourceId { get; set; }

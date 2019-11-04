@@ -1,0 +1,13 @@
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Dispatcher\bin\Debug\netcoreapp3.0\Newsfeed.Dispatcher.deps.json
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Dispatcher\bin\Debug\netcoreapp3.0\Newsfeed.Dispatcher.dll
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Dispatcher\bin\Debug\netcoreapp3.0\Newsfeed.Dispatcher.pdb
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Dispatcher\obj\Debug\netcoreapp3.0\Newsfeed.Dispatcher.AssemblyInfoInputs.cache
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Dispatcher\obj\Debug\netcoreapp3.0\Newsfeed.Dispatcher.AssemblyInfo.cs
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Dispatcher\obj\Debug\netcoreapp3.0\Newsfeed.Dispatcher.dll
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Dispatcher\obj\Debug\netcoreapp3.0\Newsfeed.Dispatcher.pdb
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Dispatcher\obj\Debug\netcoreapp3.0\Newsfeed.Dispatcher.csprojAssemblyReference.cache
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Dispatcher\bin\Debug\netcoreapp3.0\Newsfeed.Application.dll
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Dispatcher\bin\Debug\netcoreapp3.0\Newsfeed.Domain.dll
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Dispatcher\bin\Debug\netcoreapp3.0\Newsfeed.Application.pdb
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Dispatcher\bin\Debug\netcoreapp3.0\Newsfeed.Domain.pdb
+C:\Users\ThibautJoukes\source\repos\Newsfeed\Newsfeed.Dispatcher\obj\Debug\netcoreapp3.0\Newsfeed.Dispatcher.csproj.CopyComplete

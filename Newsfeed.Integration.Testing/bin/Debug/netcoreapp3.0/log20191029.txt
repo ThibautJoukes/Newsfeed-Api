@@ -1,0 +1,9 @@
+2019-10-29 17:15:40.041 +01:00 [WRN] Failed to determine the https port for redirect.
+2019-10-29 17:16:17.186 +01:00 [WRN] Failed to determine the https port for redirect.
+2019-10-29 17:16:43.568 +01:00 [WRN] Failed to determine the https port for redirect.
+2019-10-29 17:17:32.492 +01:00 [WRN] Failed to determine the https port for redirect.
+2019-10-29 17:18:00.201 +01:00 [WRN] Failed to determine the https port for redirect.
+2019-10-29 17:21:20.080 +01:00 [WRN] Failed to determine the https port for redirect.
+2019-10-29 17:36:43.131 +01:00 [WRN] Failed to determine the https port for redirect.
+2019-10-29 17:36:59.045 +01:00 [WRN] Failed to determine the https port for redirect.
+2019-10-29 17:37:28.287 +01:00 [WRN] Failed to determine the https port for redirect.

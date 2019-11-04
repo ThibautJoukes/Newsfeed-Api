@@ -1,13 +1,10 @@
-﻿using System;
-using Microsoft.AspNetCore.Http;
-using Newsfeed.Application.Entities;
+﻿using Microsoft.AspNetCore.Http;
+using Newsfeed.Domain.Entities;
 using Newtonsoft.Json;
-using System.Diagnostics;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Net;
 using System.Threading.Tasks;
-using System.Collections.Generic;
 
 namespace Newsfeed.Api.Middleware
 {

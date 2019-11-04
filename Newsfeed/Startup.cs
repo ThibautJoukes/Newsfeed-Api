@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Newsfeed.Api.Automapper;
 using Newsfeed.Api.ConfigModels;
 using Newsfeed.Api.Extensions;
 using Newsfeed.Api.Middleware;
@@ -56,11 +55,6 @@ namespace Newsfeed.Api
                     .AllowCredentials();
                 });
             });
-
-            services.AddSingleton(provider => new MapperConfiguration(cfg =>
-            {
-                cfg.AddProfile(new OrganizationProfile());
-            }).CreateMapper());
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
                 .AddNewtonsoftJson(opt => opt.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
